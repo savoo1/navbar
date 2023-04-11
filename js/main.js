@@ -1,3 +1,4 @@
+// js for navbar
 $(".navbar .lines").click(function (e) {
     e.preventDefault();
     if($("body").hasClass("navbar_active")){
@@ -55,3 +56,71 @@ $(".navbar .for_mobile ul .dropdown_li_sm a").click(function (e) {
         }
     }
 });
+
+$(".root").scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $("body").addClass("navbar_scrolled");
+    }else{
+        $("body").removeClass("navbar_scrolled");
+    }
+});
+// js for navbar end
+
+
+
+
+// js for header
+$('.slick_slide_imgs').slick({
+    cssEase: 'cubic-bezier(0.600, -0.400, 0.735, 0.045)',
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 2500,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+});
+
+$("#typed").typed({
+    strings: ["great.", "something.", "everything."],
+    typeSpeed: 100,
+    startDelay: 0,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+    cursorChar: "|",
+    contentType: "html"
+});
+// js for header
+
+
+// js for testimonials
+$(".testimonialSlider").slick({
+    arrows: false,
+    dots: true,
+    centerMode: true,
+    centerPadding: "60px",
+    variableWidth: true,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    infinite: true,
+    speed: 900,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "0px",
+          variableWidth: false,
+        },
+      },
+    ],
+  });
+  $( window ).resize(function() {
+    $('.testimonialSlider').slick('resize');
+  });
+// js for testimonials end
+  
+  
