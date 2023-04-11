@@ -74,6 +74,8 @@ a {
   color: #fff;
   display: flex;
   align-items: center;
+  text-decoration: unset;
+  color: #fff;
 }
 .topline p a {
   text-decoration: unset;
