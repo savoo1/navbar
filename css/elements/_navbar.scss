@@ -12,6 +12,10 @@
 	.wrapper{
 		max-width: 1700px;
 	}
+	a{
+		text-decoration: unset;
+		color: $light;
+	}
 	p{
 		font-weight: 400;
 		font-size: 14px;
@@ -20,6 +24,10 @@
 		color: $light;
 		display: flex;
 		align-items: center;
+		a{
+			text-decoration: unset;
+			color: $light;
+		}
 		span{
 			display: flex;
 		align-items: center;
